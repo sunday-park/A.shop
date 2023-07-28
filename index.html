@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <title>A.shop :: 생활을 바꾸다</title>
+    
+</head>
+<body>
+<!-- 상단 -->
+    <aside class="header">
+        <nav class="navbar">
+            <div class="navbar_logo">
+                <a href="index.html">A.shop</a>
+            </div>
+
+            <ul class="navbar_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Goods</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+
+            <ul class="navbar_icons" class="cart_btn">
+                <li>
+                    <a href="cart.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+                <li>
+                    <button type="button" class="login_btn">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                </li>
+            </ul>
+            
+            <a href="#" class="navbar_toogleBtn">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+        <div class="progress_bar"></div>
+    </aside>
+
+<!-- 로그인 모달 -->
+    <div class="black_bg">
+        <div class="white_bg">
+            <h5>로그인</h5>
+            <form action="success.html" id="login_form">
+                <div class="id_box">
+                    <label for="input_id" class="input_label">이메일</label>
+                    <input type="text" class="input_login" id="input_id" aria-describedby="emailHelp">
+                    <div id="help_id" class="form_text">
+                        이메일을 입력하세요
+                    </div>
+                </div>
+                <div class="pw_box">
+                    <label for="input_pw" class="input_label">비밀번호</label>
+                    <input type="password" class="input_login" id="input_pw">
+                    <div id="help_pw" class="form_text">
+                        비밀번호를 입력하세요
+                    </div>
+                </div>
+                <div class="btn_container">
+                    <button type="button" class="close_btn">닫기</button>
+                    <button type="submit" class="submit_btn">로그인</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!-- 본문 -->
+    <div class="container">
+        <div class="banner">
+            <img src="./image/Interior/main_image.jpeg" alt="사진" class="banner_img">
+        </div>
+        <div class="wrapper">
+            <div class="context_box">
+                <article class="context context_1">
+                    <h1>A.shop의 가치</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ad nemo eligendi! Voluptatibus fugit harum dolorum vel totam autem provident debitis fugiat molestias voluptatum? Culpa voluptas exercitationem totam et non.<br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad voluptatem reprehenderit cum ex repudiandae fuga placeat aperiam quod consectetur esse nisi atque deserunt vitae, ut dignissimos tenetur labore expedita veritatis!
+                    </p>
+                </article>
+                <article class="context context_2">
+                    <h1>인테리어 철학</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ad nemo eligendi! Voluptatibus fugit harum dolorum vel totam autem provident debitis fugiat molestias voluptatum? Culpa voluptas exercitationem totam et non.<br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad voluptatem reprehenderit cum ex repudiandae fuga placeat aperiam quod consectetur esse nisi atque deserunt vitae, ut dignissimos tenetur labore expedita veritatis!
+                    </p>
+                </article>
+            </div>
+<!-- 상품 -->
+            <article class="context context_sell">
+                <h1>BEST SELLER</h1>
+                    <div class="goods goods_best">
+
+                    </div>
+            </article>
+            <article class="context context_sell">
+                <h1>NEW ARRIVALS</h1>
+                <div class="goods goods_new">
+
+                </div>
+            </article>
+            <article class="context context_3">
+                <h1>With a Concept</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea tempore omnis nemo officia, mollitia possimus voluptates enim magnam, corporis voluptatum, ipsam adipisci at animi vitae reiciendis a saepe veritatis quam?
+                </p>
+            </article>
+<!-- 슬라이더 -->
+            <article>
+                <div class="slide_outer">
+                    <div class="slide_container">  
+                        <div class="slide_box">
+                            <img src="./image/Interior/image1.png" alt="사진">
+                        </div>
+                        <div class="slide_box">
+                            <img src="./image/Interior/image2.png" alt="사진">
+                        </div>
+                        <div class="slide_box">
+                            <img src="./image/Interior/image3.png" alt="사진">
+                        </div>  
+                    </div>
+
+                    <div class="slide_controller">
+                        <div class="slide_btn_angles">
+                            <button class="btn slide_btn_prev">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                            <button class="btn slide_btn_next">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="slide_btn_circles">
+                            <button class="btn silde_btn_1">
+                                <i class="fa-solid fa-circle"></i>
+                            </button>
+                            <button class="btn silde_btn_2">
+                                <i class="fa-solid fa-circle"></i>
+                            </button>
+                            <button class="btn silde_btn_3">
+                                <i class="fa-solid fa-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+        </div><!-- wrapper -->
+    </div>
+
+<!-- 하단 -->
+    <button class="scroll_btn" type="button">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
+
+    <footer class="ft">
+        <div class="ft_left">
+            <span>주식회사 A.shop</span> | <span>TEL.02-000-0000</span> | <span>FAX.02-000-0000</span><br>
+            <p>주소. 서울특별시 강남구 OO로, 그냥빌딩 100호</p>
+            <span>사업자등록번호 : 000-00-00000</span> | <span>대표자명 : 박성민</span>
+            <p>통신판매신고번호 : 2023-서울공간-0001호</p>
+        </div>
+        <div class="ft_right">
+            <p>
+                <span>
+                    <a href="#">이용약관</a>
+                </span>
+                <span> | </span>
+                <span>
+                    <a href="#">개인정보처리방침</a>
+                </span>
+                <span> | </span>
+                <span>
+                    <a href="#">사업자정보확인</a>
+                </span>
+            </p>
+            <p>
+                <span>
+                    <a href="#">배송문의</a> | <span><a href="#">고객센터</a></span> | <span><a href>주문확인</a></span>
+                </span>
+            </p>
+                <div class="ft_customer">
+                    <p><span >고객센터</span> 02-111-1111</p>
+                </div>
+            <p>운영시간 : 평일 09시 - 18시 (점심시간 13시 - 14시)</p>
+        </div>
+    </footer>
+<!-- JQuery cdn minified -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5ff835e817.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js" defer></script>
+</body>
+</html>
