@@ -212,3 +212,5 @@ $('.slide_btn_prev').on('click',function(){
 <br>
 
 ## 리뷰
+###해결되지 않은 문제
+* 장바구니 상품 개별 삭제 기능
