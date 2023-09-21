@@ -19,6 +19,9 @@ function updateProgress(){
     const totalHeight = document.body.clientHeight - window.innerHeight;
     const currentScroll = window.scrollY;
     const progress = (currentScroll / totalHeight) * 100;
+
+    //최대 100% 제한 걸기
+
     document.querySelector('.progress_bar').style.display = 'block';
     document.querySelector('.progress_bar').style.width = `${progress}%`;
 }

@@ -37,7 +37,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: var(--text-small);
 }
-aside {
+header {
     position: sticky;
     top: 0;
     z-index: 99;
@@ -324,7 +324,7 @@ button {
 
 
 /*[하단]*/
-.ft {
+footer {
     position: relative;
     border-top:rgb(175, 175, 175) 1px solid;
 }
